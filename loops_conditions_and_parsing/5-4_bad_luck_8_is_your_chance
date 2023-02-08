@@ -4,8 +4,7 @@ displays good luck the 8th loop iteration
 displays Best School the other iterations
 
 xav=1
-while [ $xav -le 11 ]
-do
+while [ $xav -le 10 ]; do
 	if [ $xav -eq 4 ]; then
 		echo "bad luck";
 	elif [ $xav -eq 8 ]; then
@@ -13,5 +12,5 @@ do
 	else
 		echo "Best School";
 	fi
-	count=$((xav + 1));
+	xav=$((xav + 1));
 done
