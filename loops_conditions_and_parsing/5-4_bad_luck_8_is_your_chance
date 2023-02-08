@@ -1,16 +1,13 @@
 #!/usr/bin/env bash
-#that cript use while to displays bad luck for the 4th loop iteration
-displays good luck the 8th loop iteration
-displays Best School the other iterations
-
-xav=1;
-while [ "$xav" -le 10 ]; do
-	if [ "$xav" == 4 ]; then
-		echo "bad luck";
-	elif [ "$xav" == 8 ]; then
-		echo "good luck";
+#that cript use while to displays bad luck for the 4th loop iteration displays good luck the 8th loop iteration displays Best School the other iterations.
+xav=1
+while [ "$xav" -ne 11 ]; do
+	if [ "$xav" -eq 4 ]; then
+		echo "bad luck"
+	elif [ "$xav" -eq 8 ]; then
+		echo "good luck"
 	else
-		echo "Best School";
+		echo "Best School"
 	fi
-	xav=$((xav + 1));
+	xav=$((xav + 1))
 done
