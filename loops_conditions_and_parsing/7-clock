@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#that cript that displays the time for 12 hours and 59 minutes
+time=0
+minutes=1
+while [ $time -ne 13 ]
+do
+    echo "Hour: $time"
+    ((time++))
+    while [ $minutes -ne 60 ]
+    do
+	echo $minutes
+	((minutes++))
+    done
+    ((minutes = 1))
+done
