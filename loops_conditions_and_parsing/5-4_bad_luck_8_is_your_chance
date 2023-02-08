@@ -3,11 +3,11 @@
 displays good luck the 8th loop iteration
 displays Best School the other iterations
 
-xav=1
+xav=1;
 while [ "$xav" -le 10 ]; do
-	if [ "$xav" -eq 4 ]; then
+	if [ "$xav" == 4 ]; then
 		echo "bad luck";
-	elif [ "$xav" -eq 8 ]; then
+	elif [ "$xav" == 8 ]; then
 		echo "good luck";
 	else
 		echo "Best School";
