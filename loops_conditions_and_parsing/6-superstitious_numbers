@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#that script that displays numbers from 1 to 20 and
+cindy=1
+while [ $cindy -ne 21 ]
+do
+    echo $cindy
+    case "$cindy" in
+	4)  echo "bad luck from China"
+	    ;;
+	9) echo "bad luck from Japan"
+	    ;;
+	17) echo "bad luck from Italy"
+	    ;;
+	esac
+    cindy=$((cindy + 1))
+done
